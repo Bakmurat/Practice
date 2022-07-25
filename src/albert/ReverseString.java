@@ -2,7 +2,7 @@ package albert;
 
 public class ReverseString {
 
-    public static String reverseString(String str){
+    public static String reverseString1(String str){
         String reverse="";
         for (int i=str.length()-1; i>=0; i--){
             reverse+=""+str.charAt(i);
@@ -11,9 +11,12 @@ public class ReverseString {
         return reverse;
     }
 
-    public static void main(String[] args) {
-	// write your code here
+    public static String reverseString2(String str){
+        return new StringBuilder(str).reverse().toString();
+    }
 
-        System.out.println("reverseString(\"Hello World\") = " + reverseString("Hello World"));
+    public static void main(String[] args) {
+        //System.out.println("reverseString1(\"Hello World\") = " + reverseString1("Hello World"));
+        System.out.println("reverseString2(\"Hello World\") = " + reverseString2("Hello World"));
     }
 }
