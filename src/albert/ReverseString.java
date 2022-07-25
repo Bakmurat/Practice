@@ -6,5 +6,6 @@ public class ReverseString {
 	// write your code here
         System.out.println("Hi");
         System.out.println("second");
+        System.out.println("third");
     }
 }
