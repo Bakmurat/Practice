@@ -12,7 +12,10 @@ public class ReverseString {
     }
 
     public static String reverseString2(String str){
-        return new StringBuilder(str).reverse().toString();
+        StringBuilder test = new StringBuilder(str);//Convert string to stringBuilder
+        test=test.reverse();//reverse stringBuilder
+        String reverse = test.toString();//Convert stringbuilder to string
+        return reverse;//return string result
     }
 
     public static void main(String[] args) {
