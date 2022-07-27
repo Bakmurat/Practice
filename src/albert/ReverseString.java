@@ -18,8 +18,10 @@ public class ReverseString {
     }
 
     public static String reverseString2(String str){
+
         String reverse = new StringBuilder(str).reverse().toString();
         return reverse;
+
     }
 
     public static String reverseString3(String str){
